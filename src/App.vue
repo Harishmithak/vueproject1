@@ -16,7 +16,7 @@
 
     <h4>The employee experience is :{{ experience }}years</h4>
 
-    <p></p>
+
     <h4>The employee bonus is :{{ bonus() }}</h4>
 
     <h4>The employee total salary is :{{ totalsalary() }}</h4>
