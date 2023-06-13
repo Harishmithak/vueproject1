@@ -1,4 +1,8 @@
-<template>
+
+<!-- assignment 1 -->
+
+<!-- <template>
+
   <div class="container">
     <h5 class="fw-bolder h1">EMPLOYEE DETAILS</h5>
 
@@ -22,6 +26,8 @@
     <h4>The employee total salary is :{{ totalsalary() }}</h4>
 
   </div>
+
+  <product></product>
 </template>
 
 
@@ -36,6 +42,7 @@ export default {
       designation: 'developer',
       salary: 20000,
       experience: 1,
+
     }
   },
   methods: {
@@ -53,7 +60,14 @@ export default {
 
 }
 
+import product from './components/product.vue'
 </script>
+
+
+
+
+
+
 
 <style>
 body {
@@ -63,4 +77,40 @@ body {
 .h1 {
   color: blue;
 }
+h4{
+  color: rgb(34, 19, 31);
+}
+</style> -->
+
+
+
+<!-- ASSIGNMENT 2 -->
+
+<template>
+
+ <!-- <product> </product> -->
+<array> </array>
+<!-- <contact> </contact> -->
+</template>
+
+
+<script>
+import product from './components/product.vue'
+import array from './components/array.vue'
+import contact from './components/contact.vue'
+
+export default{
+  
+  components: {
+    product,
+    array,
+    contact
+  
+  }}
+
+</script>
+
+<style>
+
+
 </style>
