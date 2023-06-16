@@ -1,23 +1,23 @@
 <template>
     <div>
-      <h2>Product List</h2>
+      <h2 class="text-dark">Product List</h2>
       <h3>All Product Names:</h3>
       <ul>
-        <li v-for="product in products" >
+        <li v-for="product in products" class="text-white">
           {{ product }}
         </li>
       </ul>
   
       <h3>Product Names with More than One Word:</h3>
       <ul>
-        <li v-for="product in morethanoneword" >
+        <li v-for="product in morethanoneword" class="text-white">
           {{ product }}
         </li>
       </ul>
   
       <h3>Product Names with Length More than 7 Letters:</h3>
       <ul>
-        <li v-for="product in morethan7letters">
+        <li v-for="product in morethan7letters" class="text-white">
           {{ product }}
         </li>
       </ul>
@@ -50,7 +50,7 @@
   };
   </script>
   
-  <style scoped>
+  <style >
 
   
   li {
@@ -64,7 +64,5 @@
 
     background-color: rgb(178, 206, 206);
   }
-  h2{
-    color:cadetblue
-  }
+
   </style>

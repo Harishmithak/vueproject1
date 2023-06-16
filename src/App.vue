@@ -88,9 +88,13 @@ h4{
 
 <template>
 
- <!-- <product> </product> -->
-<array> </array>
+ <product> </product>
+<!-- <array> </array> -->
 <!-- <contact> </contact> -->
+<!-- <home></home> -->
+<!-- <about> </about> -->
+<!-- <keyevents> </keyevents> -->
+<!-- <mouseevents> </mouseevents> -->
 </template>
 
 
@@ -98,13 +102,21 @@ h4{
 import product from './components/product.vue'
 import array from './components/array.vue'
 import contact from './components/contact.vue'
+import home from './components/home.vue'
+import about from './components/about.vue'
+import keyevents from './components/keyevents.vue'
+import mouseevents from './components/mouseevents.vue'
 
 export default{
   
   components: {
     product,
     array,
-    contact
+    contact,
+    home,
+    about,
+    keyevents,
+    mouseevents
   
   }}
 

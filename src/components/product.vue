@@ -1,11 +1,12 @@
 <template>
 
 
-  <div>
-    <h1>Product Details</h1>
+  <div class="container ">
+    <h1 id="p2" >Product Details</h1>
     <div v-for="product in products" >
-      <h3>{{ ProductDetails(product) }}</h3>
+      <h3  id="p1">{{ ProductDetails}}</h3>
     </div>
+    
   </div>
 </template>
 
@@ -39,16 +40,40 @@ export default {
       ]
     };
   },
-  methods: {
-    ProductDetails(product) {
+  computed:{
+    ProductDetails:function(product) {
       if (product.quantity !== 0) {
-        return 'The product name is '+ product.productName;
+        return 'The product '+ product.productName+' is available';
       } else {
         return 'The product '+ product.productName +' is not available';
       }
     }
   }
-};
+  }
+  // methods: {
+  //   ProductDetails(product) {
+  //     if (product.quantity !== 0) {
+  //       return 'The product '+ product.productName+' is available';
+  //     } else {
+  //       return 'The product '+ product.productName +' is not available';
+  //     }
+  //   }
+  // }
+
+
 
 
 </script>
+<style>
+#p1{
+  font-family: cursive;
+    color:rgb(11, 12, 12);
+    font-size: 20px;
+
+    background-color: rgb(178, 206, 206);
+}
+#p2{
+  font-family: cursive;
+  color: rgb(63, 10, 54);
+}
+</style>
